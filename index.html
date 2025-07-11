@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>فروشگاه آنلاین - نمونه کارها</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body class="bg-slate-900 text-white">
+    <!-- Header -->
+    <header class="bg-slate-800/50 backdrop-blur-md shadow-2xl sticky top-0 z-50">
+      <div class="container mx-auto px-6 py-4">
+<nav class="flex justify-between items-center relative">
+  <!-- Logo + Title (Always visible) -->
+  <div class="flex items-center space-x-reverse space-x-4">
+    <img
+      src="/assets/logoHeader.png"
+      alt="logoHeader"
+      class="w-10 h-10 object-contain"
+    />
+    <div class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+      داک سوآن
+    </div>
+  </div>
+
+  <!-- Hamburger Icon (Mobile only) -->
+  <div class="md:hidden">
+    <button id="menu-toggle" class="text-white focus:outline-none">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16"
+        />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Desktop Menu -->
+  <ul class="hidden md:flex space-x-8 space-x-reverse items-center">
+    <li><a href="#" class="nav-link hover:text-blue-400">خانه</a></li>
+    <li>
+      <a href="#portfolio" class="nav-link hover:text-blue-400">نمونه کارها</a>
+    </li>
+    <li><a href="#" class="nav-link hover:text-blue-400">تماس</a></li>
+
+    <!-- Logo in desktop (optional, if needed here again) -->
+    <!-- <li>
+      <img
+        class="logoHeader"
+        src="/assets/logoHeader.png"
+        alt="logoHeader"
+      />
+    </li> -->
+  </ul>
+
+  <!-- Mobile Menu -->
+  <ul
+    id="mobile-menu"
+    class="absolute top-full right-0 w-full bg-slate-800/60 backdrop-blur-md shadow-lg rounded-b-xl text-white flex-col space-y-4 px-6 py-4 hidden md:hidden z-40"
+  >
+    <li><a href="#" class="block hover:text-blue-400">خانه</a></li>
+    <li>
+      <a href="#portfolio" class="block hover:text-blue-400">نمونه کارها</a>
+    </li>
+    <li><a href="#" class="block hover:text-blue-400">تماس</a></li>
+  </ul>
+</nav>
+
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient py-20">
+      <div class="container mx-auto px-6 text-center">
+        <h1
+          class="text-5xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent"
+        >
+          نمونه کارهای برتر ما
+        </h1>
+        <p class="text-xl text-slate-300 mb-8 max-w-2xl mx-auto">
+          من سید محمد حسینی، ملقب به Seven Viper، متخصص طراحی لوگوهای خلاق و خاص
+          برای کسب‌وکار، کانال، گروه، پروفایل، برند شخصی و هر جایی که نیاز به
+          دیده شدن داری!
+        </p>
+        <a
+          href="#portfolio"
+          class="inline-block bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 px-8 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg"
+        >
+          مشاهده نمونه کارها
+        </a>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-slate-800">
+      <div class="container mx-auto px-6">
+        <h2
+          class="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent"
+        >
+          نمونه کارهای ما
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Portfolio Item 1 -->
+          <div
+            class="portfolio-card bg-slate-700 rounded-2xl overflow-hidden shadow-xl"
+          >
+            <div class="portfolio-image relative h-48 overflow-hidden">
+              <img
+                src="/assets/1.png"
+                alt="MetalLogo"
+                class="w-full h-full object-cover transition-transform duration-500"
+              />
+              <div
+                class="portfolio-overlay absolute inset-0 flex items-center justify-center"
+              >
+                <div class="text-center">
+                  <h3 class="text-xl font-bold mb-2">لوگو های فلزی</h3>
+                  <p class="text-sm">مشاهده جزئیات</p>
+                </div>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">لوگو های فلزی</h3>
+              <p class="text-slate-300 text-sm mb-4">
+                لوگو های مینیمال، شیک و ترندی که تازگیا خیلی از چنل در تلگرام در
+                حال استفاده از این نوع لوگو های هستند.
+              </p>
+              <div class="flex justify-between items-center">
+                <span class="text-blue-400 font-semibold"
+                  >سفارش لوگو های فلزی</span
+                >
+                <a href="https://t.me/ouTis3">
+                  <button
+                    class="text-purple-400 hover:text-purple-300 transition-colors"
+                  >
+                    سفارش 🠐
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Portfolio Item 2 -->
+          <div
+            class="portfolio-card bg-slate-700 rounded-2xl overflow-hidden shadow-xl"
+          >
+            <div class="portfolio-image relative h-48 overflow-hidden">
+              <img
+                src="assets/2.png"
+                alt="3D Logos"
+                class="w-full h-full object-cover transition-transform duration-500"
+              />
+              <div
+                class="portfolio-overlay absolute inset-0 flex items-center justify-center"
+              >
+                <div class="text-center">
+                  <h3 class="text-xl font-bold mb-2">لوگو های سه بعدی</h3>
+                  <p class="text-sm">مشاهده جزئیات</p>
+                </div>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">لوگو های سه بعدی</h3>
+              <p class="text-slate-300 text-sm mb-4">
+                لوگوی سه‌بعدی تصویری گرافیکی است که با ایجاد عمق و بُعد، حس
+                واقعی‌تری نسبت به شکل و فضا ایجاد می‌کند.
+              </p>
+              <div class="flex justify-between items-center">
+                <span class="text-green-400 font-semibold"
+                  >سفارش لوگو های سه بعدی</span
+                >
+                <a href="https://t.me/ouTis3">
+                  <button
+                    class="text-purple-400 hover:text-purple-300 transition-colors"
+                  >
+                    سفارش 🠐
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Portfolio Item 3 -->
+          <div
+            class="portfolio-card bg-slate-700 rounded-2xl overflow-hidden shadow-xl"
+          >
+            <div class="portfolio-image relative h-48 overflow-hidden">
+              <img
+                src="assets/4.png"
+                alt="طرح های مینیمال"
+                class="w-full h-full object-cover transition-transform duration-500"
+              />
+              <div
+                class="portfolio-overlay absolute inset-0 flex items-center justify-center"
+              >
+                <div class="text-center">
+                  <h3 class="text-xl font-bold mb-2"></h3>
+                  <p class="text-sm">مشاهده جزئیات</p>
+                </div>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">طرح های مینیمال</h3>
+              <p class="text-slate-300 text-sm mb-4">
+                طرح‌های مینیمال یعنی همه چیز ساده، تمیز و بدون شلوغی، ولی همچنان
+                شیک و حرفه‌ای.
+              </p>
+              <div class="flex justify-between items-center">
+                <span class="text-orange-400 font-semibold"
+                  >سفارش طرح های مینیمال</span
+                >
+                <button
+                  class="text-purple-400 hover:text-purple-300 transition-colors"
+                >
+                  سفارش 🠐
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Portfolio Item 4 -->
+          <div
+            class="portfolio-card bg-slate-700 rounded-2xl overflow-hidden shadow-xl"
+          >
+            <div class="portfolio-image relative h-48 overflow-hidden">
+              <img
+                src="assets/5.png"
+                alt="برندینگ و هویت بصری"
+                class="w-full h-full object-cover transition-transform duration-500"
+              />
+              <div
+                class="portfolio-overlay absolute inset-0 flex items-center justify-center"
+              >
+                <div class="text-center">
+                  <h3 class="text-xl font-bold mb-2">برندینگ و هویت بصری</h3>
+                  <p class="text-sm">مشاهده جزئیات</p>
+                </div>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">برندینگ</h3>
+              <p class="text-slate-300 text-sm mb-4">
+                طراحی هویت بصری کامل شامل لوگو، کارت ویزیت و مواد تبلیغاتی
+              </p>
+              <div class="flex justify-between items-center">
+                <span class="text-pink-400 font-semibold">سفارش پوستر تبلیغاتی</span>
+                
+                <a href="https://t.me/ouTis3"><button
+                  class="text-purple-400 hover:text-purple-300 transition-colors"
+                >
+                  سفارش 🠐
+                </button></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Portfolio Item 5 -->
+          <div
+            class="portfolio-card bg-slate-700 rounded-2xl overflow-hidden shadow-xl"
+          >
+            <div class="portfolio-image relative h-48 overflow-hidden">
+              <img
+                src="assets/3.png"
+                alt="پروفایل شخصی"
+                class="w-full h-full object-cover transition-transform duration-500"
+              />
+              <div
+                class="portfolio-overlay absolute inset-0 flex items-center justify-center"
+              >
+                <div class="text-center">
+                  <h3 class="text-xl font-bold mb-2"></h3>
+                  <p class="text-sm">مشاهده جزئیات</p>
+                </div>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">پروفایل برای چنل ها و اکانت های بیزنس</h3>
+              <p class="text-slate-300 text-sm mb-4">
+                لوگوی شخصی سازی شده مخصوص شرکت شما.
+              </p>
+              <div class="flex justify-between items-center">
+                <span class="text-indigo-400 font-semibold">سفارش پروفایل شخصی</span>
+              <a href="https://t.me/ouTis3"><button
+                  class="text-purple-400 hover:text-purple-300 transition-colors"
+                >
+                  سفارش 🠐
+                </button></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Portfolio Item 6 (Bonus) -->
+          <div
+            class="portfolio-card bg-slate-700 rounded-2xl overflow-hidden shadow-xl"
+          >
+            <div class="portfolio-image relative h-48 overflow-hidden">
+              <img
+                src="assets/7.jpg"
+                alt="پوستر اجناس"
+                class="w-full h-full object-cover transition-transform duration-500"
+              />
+              <div
+                class="portfolio-overlay absolute inset-0 flex items-center justify-center"
+              >
+                <div class="text-center">
+                  <h3 class="text-xl font-bold mb-2">پوستر اجناس</h3>
+                  <p class="text-sm">مشاهده جزئیات</p>
+                </div>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">طراحی پوستر مخصوص اجناس</h3>
+              <p class="text-slate-300 text-sm mb-4">
+                طراحی پوستر اجناس، هنری است برای برجسته‌سازی ویژگی‌ها و جذابیت بصری محصولات به‌گونه‌ای که در نگاه اول مخاطب را جذب کرده و او را به خرید یا تعامل بیشتر ترغیب کند.
+              </p>
+              <div class="flex justify-between items-center">
+                <span class="text-cyan-400 font-semibold">سفارش پوستر</span>
+                <a href="https://t.me/ouTis3"><button
+                  class="text-purple-400 hover:text-purple-300 transition-colors"
+                >
+                  سفارش 🠐
+                </button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section class="py-20 section-gradient">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2
+            class="text-4xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent"
+          >
+            چرا ما؟
+          </h2>
+          <p class="text-xl text-slate-300 max-w-3xl mx-auto">
+            دلایل انتخاب ما برای پروژه بعدی شما
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Feature 1 -->
+          <div
+            class="portfolio-card bg-slate-700/50 backdrop-blur-sm rounded-2xl p-8 text-center border border-slate-600/30"
+          >
+            <div
+              class="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <svg
+                class="w-8 h-8 text-white"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-4">کیفیت بالا</h3>
+            <p class="text-slate-300">
+              تمامی پروژه‌ها با بالاترین استانداردهای کیفی و با استفاده از
+              جدیدترین تکنولوژی‌ها انجام می‌شود
+            </p>
+          </div>
+
+          <!-- Feature 2 -->
+          <div
+            class="portfolio-card bg-slate-700/50 backdrop-blur-sm rounded-2xl p-8 text-center border border-slate-600/30"
+          >
+            <div
+              class="w-16 h-16 bg-gradient-to-br from-green-500 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <svg
+                class="w-8 h-8 text-white"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-4">تحویل به موقع</h3>
+            <p class="text-slate-300">
+              متعهد به زمان‌بندی پروژه هستیم و همیشه کارها را در موعد مقرر تحویل
+              می‌دهیم
+            </p>
+          </div>
+
+          <!-- Feature 3 -->
+          <div
+            class="portfolio-card bg-slate-700/50 backdrop-blur-sm rounded-2xl p-8 text-center border border-slate-600/30"
+          >
+            <div
+              class="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <svg
+                class="w-8 h-8 text-white"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-4">پشتیبانی ۲۴/۷</h3>
+            <p class="text-slate-300">
+              تیم پشتیبانی ما همیشه آماده کمک و راهنمایی شما در تمامی مراحل
+              پروژه است
+            </p>
+          </div>
+
+          <!-- Feature 4 -->
+          <div
+            class="portfolio-card bg-slate-700/50 backdrop-blur-sm rounded-2xl p-8 text-center border border-slate-600/30"
+          >
+            <div
+              class="w-16 h-16 bg-gradient-to-br from-pink-500 to-rose-600 rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <svg
+                class="w-8 h-8 text-white"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z" />
+                <path
+                  fill-rule="evenodd"
+                  d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-4">قیمت مناسب</h3>
+            <p class="text-slate-300">
+              بهترین کیفیت را با مناسب‌ترین قیمت ارائه می‌دهیم تا همه بتوانند از
+              خدمات ما استفاده کنند
+            </p>
+          </div>
+
+          <!-- Feature 5 -->
+          <div
+            class="portfolio-card bg-slate-700/50 backdrop-blur-sm rounded-2xl p-8 text-center border border-slate-600/30"
+          >
+            <div
+              class="w-16 h-16 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <svg
+                class="w-8 h-8 text-white"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-4">تجربه بالا</h3>
+            <p class="text-slate-300">
+              تیم ما از متخصصان با تجربه تشکیل شده که در زمینه‌های مختلف ابموجی
+              مهارت دارند
+            </p>
+          </div>
+
+          <!-- Feature 6 -->
+          <div
+            class="portfolio-card bg-slate-700/50 backdrop-blur-sm rounded-2xl p-8 text-center border border-slate-600/30"
+          >
+            <div
+              class="w-16 h-16 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <svg
+                class="w-8 h-8 text-white"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-4">سفارشی‌سازی کامل</h3>
+            <p class="text-slate-300">
+              هر پروژه بر اساس نیازهای خاص شما طراحی و توسعه می‌یابد تا نتیجه
+              منحصر به فرد باشد
+            </p>
+          </div>
+        </div>
+
+        <!-- Stats Section -->
+        <div class="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div class="text-center">
+            <div
+              class="text-4xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent mb-2"
+            >
+              ۱۰۰+
+            </div>
+            <p class="text-slate-300">پروژه موفق</p>
+          </div>
+          <div class="text-center">
+            <div
+              class="text-4xl font-bold bg-gradient-to-r from-green-400 to-teal-500 bg-clip-text text-transparent mb-2"
+            >
+              ۵۰+
+            </div>
+            <p class="text-slate-300">مشتری راضی</p>
+          </div>
+          <div class="text-center">
+            <div
+              class="text-4xl font-bold bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent mb-2"
+            >
+              ۵
+            </div>
+            <p class="text-slate-300">سال تجربه</p>
+          </div>
+          <div class="text-center">
+            <div
+              class="text-4xl font-bold bg-gradient-to-r from-pink-400 to-purple-500 bg-clip-text text-transparent mb-2"
+            >
+              ۲۴/۷
+            </div>
+            <p class="text-slate-300">پشتیبانی</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 py-12 border-t border-slate-700">
+      <div class="container mx-auto px-6">
+        <div class="text-center">
+          <div
+            class="text-2xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent"
+          >
+            داک سوآن
+          </div>
+          <p class="text-slate-400 mb-6">ارائه بهترین خدمات طراحی ایموجی</p>
+          <div class="flex justify-center space-x-6 space-x-reverse">
+            <a
+              href="#"
+              class="text-slate-400 hover:text-blue-400 transition-colors"
+              >تلگرام</a
+            >
+            <a
+              href="#"
+              class="text-slate-400 hover:text-blue-400 transition-colors"
+              >اینستاگرام</a
+            >
+            <a
+              href="#"
+              class="text-slate-400 hover:text-blue-400 transition-colors"
+              >چنل تلگرام</a
+            >
+          </div>
+          <div
+            class="mt-8 pt-8 border-t border-slate-700 text-slate-500 text-sm"
+          >
+            © ۱۴۰۳ داک سوآن. تمامی حقوق محفوظ است.
+            <br>
+            <a style="direction: ltr" href="https://t.me/i3rfun">©  .Made By Erfan Akrami</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
